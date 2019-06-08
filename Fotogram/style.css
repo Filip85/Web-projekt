@@ -1,6 +1,6 @@
 body{
     background: url(snow.jpg);
-    background-size: cover;  
+    background-size: cover;
 }
 
 .signIn{
@@ -17,7 +17,7 @@ body{
 }
 
 .signUp{
-    top: 100%;
+    top: 52%;
     left: 50%;
     background:#1DA1F2;
     color: antiquewhite;
