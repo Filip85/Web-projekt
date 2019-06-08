@@ -1,0 +1,174 @@
+body{
+    background: url(snow.jpg);
+    background-size: cover;  
+}
+
+/**{
+    margin: 0;
+    padding: 0;
+}
+
+.slider{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 50vh;
+    backface-visibility: hidden;
+    animation: slideBg 8s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url('1.jpeg')
+}
+
+.load{
+    animation: slide 2s;
+}
+
+@keyframes slideBg{
+    0%{
+        background-image: url('2.jpeg');
+    }
+    25%{
+        background-image: url('3.jpeg');
+    }
+    50%{
+        background-image: url('4.jpeg');
+        
+    }
+    75%{
+        background-image: url('4.jpeg');
+    }
+        
+    100%{
+        background-image: url('4.jpeg');
+
+    }
+}*/
+
+.signIn{
+    top: 50%;
+    left: 50%;
+    border-style: solid; 
+    border-color: #1DA1F2;
+    color: antiquewhite;
+    position: absolute;
+    width: 320px;
+    height: 380px;
+    transform: translate(-50%, -50%);
+    padding: 70px 30px;
+    box-sizing: border-box;
+}
+
+.signUp{
+    top: 50%;
+    left: 50%;
+    background:#1DA1F2;
+    color: antiquewhite;
+    position: absolute;
+    width: 380px;
+    height: 660px;
+    transform: translate(-50%, -50%);
+    padding: 70px 30px;
+    box-sizing: border-box;
+}
+
+.loginAvatar{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    color: #1DA1F2;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0 0 15px;
+    font-size: 22px;
+    text-align: center
+}
+
+input, label{
+    color: #1DA1F2;
+    display: block;
+}
+
+label{
+    margin-bottom: 5px;  /*malo sam udaljio labele od inputa*/
+}
+
+.signIn input{
+    width: 100%;                  /*skroz će proširiti inpute pa će button dolje otići*/
+    margin-bottom: 35px;          /*između donjeg inputa i buttona*/
+}
+
+.signIn input[type="password"], input[type="password"]{
+    border: none;       /*maknut će rubove inputa*/
+    border-bottom: 1px solid #1DA1F2;
+    background: transparent;    /*proziran input*/
+    outline: none;
+    color: #1DA1F2;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #1DA1F2;
+    opacity: 1; /* Firefox */
+  }
+
+.signIn input[type="submit"]{
+    outline: none;
+    font-size: 15px;
+    height: 40px;
+    border-radius: 20px;     
+}
+
+.signIn a{
+    text-decoration: none;
+    color: white;
+    line-height: 20px;   /*udaljenost između linkova*/
+    padding: 15px;
+}
+
+.signUp input{
+    width: 100%;                  /*skroz će proširiti inpute pa će button dolje otići*/
+    margin-bottom: 25px;          /*između donjeg inputa i buttona*/
+}
+
+.signUp input[type="text"], input[type="password"]{
+    border: none;       /*maknut će rubove inputa*/
+    border-bottom: 1px solid white;
+    background: transparent;    /*proziran input*/
+    outline: none;
+    color: white;
+}
+
+.signUp input[type="submit"]{
+    outline: none;
+    font-size: 15px;
+    height: 40px;
+    border-radius: 20px;     
+}
+
+.signUp a{
+    text-decoration: none;
+    color: white;
+    line-height: 20px;   /*udaljenost između linkova*/
+    padding: 15px;
+}
+
+.button{
+    background-color: #1DA1F2;
+    color: white;
+}
+
+.newForm{
+    background-color: #1DA1F2;
+    color: white;
+}
+
+
+
+
+
+

@@ -1,0 +1,167 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;  /*div i ul jedan do drugog*/
+    justify-content: space-around; /*div u ul udaljeni*/
+    align-items: center;
+    min-height: 8vh;           /*postavlja minimalnu visinu navbara*/
+    background-color: #1DA1F2;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.logo {
+    width: 60px;
+    margin-top: 6px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around; 
+    width: 30%;  /*ovo će udaljiti linkove jedan do drugogo jedino ako je justifay-content postavljen na space-aroud*/
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;      /*limkovi nisu podvuceni*/
+    letter-spacing: 3px;         /*3px udaljenost među slova*/
+    font-weight: bold;           /*limkovi će biti boldani*/
+    font-size: 14px;
+}
+
+.nav-links li {
+    list-style: none;
+    margin-top: 6px;
+}
+
+.mobile div{
+    width: 25px;
+    height: 5px;
+    margin: 3px;   /*mala udaljenost između divova*/
+    background-color: white;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1024px){
+    .nav-links {
+        width: 60%;  /*ovo će udaljiti linkove jedan do drugogo jedino ako je justifay-content postavljen na space-aroud*/
+    }
+}
+
+@media screen and (max-width: 768px){
+    .nav-links {
+        position: absolute;
+        right: 0px;   /*zaljepio sam linkove na desnu stranu*/
+        height: 92vh;  /*full screen jer je min-height kod .nav 8vh*/
+        top: 8vh;
+        background-color: #1DA1F2;
+        display: flex;
+        flex-direction: column;  /*linkovi su jedan ispod drugoga*/
+        align-items: center;
+        width: 100%; 
+        transform: translateX(100%);    /*miće izvan ekrana*/
+        transition: 0.7s;
+        overflow: hidden;
+    }
+    /*.nav-links li{
+        opacity: 1;  /*ne vide se elementi li-a*/
+    /*}*/
+
+    .mobile {
+        display: block;
+        cursor: pointer;
+    }
+   
+}
+
+.nav-active {
+    transform: translateX(0%);    /*na klike se prikazuje*/
+    transition: 0.7s;
+}
+
+.nav-deactivate {
+    transform: translateX(100%);    /*na klike se prikazuje*/
+    transition: 0.7s;
+}
+
+/*.nav-links-active li{
+    opacity: 0;  /*vide se elementi li-a*/
+    /*overflow: scroll;*/
+/*}*/
+
+
+.avatar {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.form-popup {
+    display: none;
+  }
+
+.img:hover {
+ transform: scale(1.1);   
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 0.4em; 
+    padding:3.5px
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox:target {
+    display: flex;
+}
+.close {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    top: 2em;
+    right: 5em;
+    background: red;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close::after {
+    content: 'X';
+    color: white;
+    font-weight: 700;
+}
+
+.links {
+    /*pomocni class kako bih mogao hvatit a tag za inkrementiranje*/
+}
+
+
+
+
